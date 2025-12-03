@@ -1,7 +1,7 @@
 import telebot, random, json, os, threading, time
 from telebot import types
 
-TOKEN = "8547453047:AAGLR2o6xzgbe6DL6LvNnZ9_4uecN5M-ymI"
+TOKEN = "Bot_Token"
 bot = telebot.TeleBot(TOKEN)
 
 DATA = "stats.json"
@@ -242,4 +242,5 @@ def rank(m):
     bot.send_message(m.chat.id, txt)
 
 bot.polling(none_stop=True)
+
 
